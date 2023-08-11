@@ -1,0 +1,40 @@
+.selector-slots {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 24px;
+  grid-auto-flow: row;
+  background-color: aqua;
+}
+
+.scenario-builder-container {
+  height: 100vh;
+  background-color: yellow;
+}
+
+.offensive-sats {
+  grid-area: 1 / 10 / 2 / 13;
+  background-color: gray;
+}
+
+.select-side {
+  grid-area: 1 / 6 / 2 / 9;
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}
+
+.high-value-assets {
+  grid-area: 1 / 2 / 2 / 5;
+  background-color: gray;
+}
+
+.selector-1 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.selector-2 {
+  grid-area: 1 / 9 / 2 / 10;
+}
