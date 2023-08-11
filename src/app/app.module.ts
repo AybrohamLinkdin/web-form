@@ -4,12 +4,22 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { ScenarioBuilderComponent } from './scenario-builder/scenario-builder/scenario-builder.component';
+import { ScenarioBuilderComponent } from './components/scenario-builder/scenario-builder.component';
+import { HttpClientModule } from '@angular/common/http';
+import {
+  MatButtonModule,
+  MatIconModule,
+  MatListModule,
+} from '@angular/material';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
     RouterModule.forRoot([{ path: '', component: ScenarioBuilderComponent }]),
   ],
   declarations: [AppComponent, ScenarioBuilderComponent],

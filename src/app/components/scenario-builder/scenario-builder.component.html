@@ -1,0 +1,42 @@
+<div class="scenario-builder-container">
+  <!-- <div class="operations">
+    <button>New</button>
+    <div class="db-operations">
+      <button>Save</button>
+      <button>Load</button>
+    </div>
+    <div class="file-operations">
+      <button>Export</button>
+      <button>Import</button>
+    </div>
+  </div> -->
+  <div class="selector-slots">
+    <div class="offensive-sats">
+      <mat-selection-list #offSatsSelected>
+        <mat-list-option *ngFor="let asset of offensiveSats">
+          {{ asset.name }}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+    <div class="select-side">
+      <mat-selection-list #unselectedAssets>
+        <mat-list-option *ngFor="let asset of unselected">
+          {{ asset.name }}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+    <div class="high-value-assets">
+      <mat-selection-list #hvaSelected>
+        <mat-list-option *ngFor="let asset of hvas">
+          {{ asset.name }}
+        </mat-list-option>
+      </mat-selection-list>
+    </div>
+    <div class="selector-1">
+      <button mat-icon-button>
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+    <div class="selector-2"></div>
+  </div>
+</div>
